@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../main.css"/>
+    <style>
+#div_pages{
+    margin: 30pt;
+}
+    </style>
+    <title>软件</title>
+</head>
+<body>
+    <div id="div_menu">
+        <a style="margin-right:40px;" href="javascript:history.go(-1)">← 返回</a>
+        <a href="../" style="cursor: pointer;text-decoration: none;color: black;font-weight: 60;font-size: 20px;font-family: Consolas;text-align: center;">
+            zero-range
+        </a>
+        <a href="../">主页</a>
+        <a href="./" style="background: rgba(128,128,128,.3);">软件</a>
+        <a href="../downloads/">下载</a>
+        <a href="../source_code/">源代码</a>
+        <a href="../articles/">文章</a>
+        <a href="../links/">链接</a>
+    </div>
+    <div id="div_main">
+        <h1>软件</h1>
+        <div id="div_pages">
+        </div>
+    </div>
+</body>
+<script>
+var pages=[
+    "All The Way Forward",
+    "象棋",
+    "Minesweeper",
+    "CatchCheese",
+    "Memory_usage_analysis",
+    ];
+var pages_list=document.getElementById("div_pages");
+for(var i=0;i<pages.length;++i){
+    pages_list.innerHTML += "<p>"+(i+1)+". <a href=\""+pages[i]+".html\">"+pages[i]+"</a></p>";
+}
+</script>
+</html>

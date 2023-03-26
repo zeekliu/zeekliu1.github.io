@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../main.css"/>
+    <style>
+.list{
+    margin: 30pt;
+}
+.list p{
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+    </style>
+    <title>源代码</title>
+</head>
+<body>
+    <div id="div_menu">
+        <a style="margin-right:40px;" href="javascript:history.go(-1)">← 返回</a>
+        <a href="../" style="cursor: pointer;text-decoration: none;color: black;font-weight: 60;font-size: 20px;font-family: Consolas;text-align: center;">
+            zero-range
+        </a>
+        <a href="../">主页</a>
+        <a href="../softwares/">软件</a>
+        <a href="../downloads/">下载</a>
+        <a href="./" style="background: rgba(128,128,128,.3);">源代码</a>
+        <a href="../articles/">文章</a>
+        <a href="../links/">链接</a>
+    </div>
+    <div id="div_main">
+        <h1>源代码</h1>
+        <div id="div_python" class="list">
+            <h2>Python</h2>
+        </div>
+        <div id="div_c++" class="list">
+            <h2>C++</h2>
+        </div>
+    </div>
+</body>
+<script>
+var python_files=[
+    "CatchCheese1.1.py",
+    "CatchCheese1.2.py",
+    "Memory_usage_analysis.py",
+    "minesweeper.py",
+    "象棋.py"
+    ];
+var python_downloads_list=document.getElementById("div_python");
+for(var i=0;i<python_files.length;++i){
+    python_downloads_list.innerHTML += "<p>"+(i+1)+". <a href=\"python/"+python_files[i]+"\">"+python_files[i]+"</a></p>";
+}
+var cpp_files=[
+    "并查集模板.cpp",
+    "24point.cpp"
+    ];
+var cpp_downloads_list=document.getElementById("div_c++");
+for(var i=0;i<cpp_files.length;++i){
+    cpp_downloads_list.innerHTML += "<p>"+(i+1)+". <a href=\"c++/"+cpp_files[i]+"\">"+cpp_files[i]+"</a></p>";
+}
+</script>
+</html>

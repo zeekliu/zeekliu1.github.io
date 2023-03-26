@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../main.css"/>
+	<link rel="stylesheet" href="./highlight.min.css">
+	<script src="./highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<style>
+#div_article{
+	margin: 30pt;
+}
+img{
+    width: 880px;
+}
+	</style>
+    <title>文章 - 如何制作简单的StudentMainKiller</title>
+</head>
+<body>
+    <div id="div_menu">
+        <a style="margin-right:40px;" href="javascript:history.go(-1)">← 返回</a>
+        <a href="../" style="cursor: pointer;text-decoration: none;color: black;font-weight: 60;font-size: 20px;font-family: Consolas;text-align: center;">
+            zero-range
+        </a>
+        <a href="../">主页</a>
+        <a href="../softwares/">软件</a>
+        <a href="../downloads/">下载</a>
+        <a href="../source_code/">源代码</a>
+        <a href="./" style="background: rgba(128,128,128,.3);">文章</a>
+        <a href="../links/">链接</a>
+    </div>
+    <div id="div_main">
+		<div id="div_article">
+			<h1>如何制作简单的StudentMainKiller</h1>
+            <p>
+                <i>
+                    建议使用
+                    <a href="https://github.com/imengyu/JiYuTrainer">JiYuTrainer</a>
+                    （<a href="https://raw.githubusercontent.com/imengyu/JiYuTrainer/master/Release/JiYuTrainer.exe">JiYuTrainer.exe</a>）
+                </i>
+            </p>
+            <p><b>警告⚠：上课掐极域有风险，需小心谨慎</b></p>
+			<p>或许最简单的选择是studentmainkiller.bat，着实方便小巧：</p>
+            <pre><code class="language-plaintext">taskkill /im StudentMain.exe /f</code></pre>
+            <p>可是这样使用不是很自在，无法做到“想听就听”的境界，一掐就全没了，老师控屏时又不能随时关闭。</p>
+            <p>所以我们需要用更高级的代码：按下特定的键就会立刻taskkill</p>
+            <p>正好，在字母键中极域除了b、c其他字母键全被封了，所以程序设置就是：按下b键和c键就杀极域！</p>
+            <p>于是只要检测b、c的按下（一定要全局，所以c++的getch无效），就立即kill</p>
+            <p>附上Python代码（为什么用Python？因为Python方便，就8行）：</p>
+            <pre><code class="language-python">import keyboard
+from os import system
+print("Press key B and C to kill StudentMain.exe")
+while True:
+    while not (keyboard.is_pressed('c') and keyboard.is_pressed('b')):
+        pass
+    while keyboard.is_pressed('c') and keyboard.is_pressed('b'):
+        system("taskkill /im StudentMain.exe /f")</code></pre>
+            <p>注意：运行本代码需要keyboard库，可以通过 pip install keyboard 下载</p>
+            <p>exe下载链接：<a href="../downloads/student_main_killer.exe">student_main_killer.exe</a></p>
+		</div>
+    </div>
+</body>
+<script>
+</script>
+</html>

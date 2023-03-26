@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../main.css"/>
+    <style>
+#div_downloads{
+    margin: 30pt;
+}
+    </style>
+    <title>下载</title>
+</head>
+<body>
+    <div id="div_menu">
+        <a style="margin-right:40px;" href="javascript:history.go(-1)">← 返回</a>
+        <a href="../" style="cursor: pointer;text-decoration: none;color: black;font-weight: 60;font-size: 20px;font-family: Consolas;text-align: center;">
+            zero-range
+        </a>
+        <a href="../">主页</a>
+        <a href="../softwares/">软件</a>
+        <a href="./" style="background: rgba(128,128,128,.3);">下载</a>
+        <a href="../source_code/">源代码</a>
+        <a href="../articles/">文章</a>
+        <a href="../links/">链接</a>
+    </div>
+    <div id="div_main">
+        <h1>下载</h1>
+        <div id="div_downloads">
+        </div>
+    </div>
+</body>
+<script>
+var files=[
+    "CatchCheese 1.1 setup.exe",
+    "CatchCheese 1.2 setup.exe",
+    "Memory_usage_analysis.zip",
+    "minesweeper.zip",
+    "象棋1.3安装包.exe",
+    "student_main_killer.exe"
+    ];
+var downloads_list=document.getElementById("div_downloads");
+for(var i=0;i<files.length;++i){
+    downloads_list.innerHTML += "<p>"+(i+1)+". <a href=\""+files[i]+"\">"+files[i]+"</a></p>";
+}
+</script>
+</html>

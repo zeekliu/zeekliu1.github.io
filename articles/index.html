@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../main.css"/>
+    <style>
+#div_articles{margin: 30pt;}
+#table_articles{margin: 0 auto;width: 100%;}
+.title td{text-align: center;}
+table, tr, td{border:2px solid black;}
+td a{font-color: black;text-decoration: none;}
+    </style>
+    <title>文章</title>
+</head>
+<body>
+    <div id="div_menu">
+        <a style="margin-right:40px;" href="javascript:history.go(-1)">← 返回</a>
+        <a href="../" style="cursor: pointer;text-decoration: none;color: black;font-weight: 60;font-size: 20px;font-family: Consolas;text-align: center;">
+            zero-range
+        </a>
+        <a href="../">主页</a>
+        <a href="../softwares/">软件</a>
+        <a href="../downloads/">下载</a>
+        <a href="../source_code/">源代码</a>
+        <a href="./" style="background: rgba(128,128,128,.3);">文章</a>
+        <a href="../links/">链接</a>
+    </div>
+    <div id="div_main">
+        <h1>文章</h1>
+        <div id="div_articles">
+            <table id="table_articles">
+                <tr class="title">
+                    <td style="width: 600px">标题</td>
+                    <td>日期</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+var articles=[
+    ["页面翻新啦", [2022,10,6], 0],
+    ["如何制作简单的StudentMainKiller", [2020,10,7], 1]
+]
+function cmp(a,b){
+    for(var i=0;i<3;++i){
+        if(a[1][i]>b[1][i])return 1;
+        if(a[1][i]<b[1][i])return -1;
+    }
+    return 0;
+};
+articles.sort(cmp);
+var articles_list=document.getElementById("table_articles");
+function PrefixInteger(num, n) {
+    return (Array(n).join(0) + num).slice(-n);
+}
+function DateToStr(d) {
+    return d[0]+"."+d[1]+"."+d[2];
+}
+for(var i=0;i<articles.length;++i){
+    articles_list.innerHTML+="<tr><td><a href=\""+PrefixInteger(articles[i][2]+1,4)+".html\">"+articles[i][0]+"</a></td><td>"+DateToStr(articles[i][1])+"</td></tr>";
+}
+</script>
+</html>
