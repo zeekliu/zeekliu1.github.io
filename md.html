@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Display Markdown on Website</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div id="markdown"></div>
+
+  <script>
+    // Get your Markdown file using fetch
+    fetch('/articles/T024.md')
+      .then(response => response.text())
+      .then(markdown => {
+        // Parse the Markdown using marked
+        const html = marked(markdown);
+
+        // Set the parsed HTML as the innerHTML of the div
+        const markdownDiv = document.getElementById('markdown');
+        markdownDiv.innerHTML = html;
+      });
+  </script>
+</body>
+</html>
