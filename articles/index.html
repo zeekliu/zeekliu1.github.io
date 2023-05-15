@@ -11,6 +11,19 @@ table, tr, td{border:2px solid black;}
 td a{font-color: black;text-decoration: none;}
     </style>
     <title>文章</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1-beta/dist/katex.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+	<script>
+    	renderMathInElement(document.body,
+   		{
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "$", right: "$", display: false}
+              ]
+         }
+  	);
+	</script>
 </head>
 <body>
     <div id="div_menu">
