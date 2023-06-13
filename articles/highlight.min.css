@@ -4,7 +4,7 @@
   License: ~ MIT (or more permissive) [via base16-schemes-source]
   Maintainer: @highlightjs/core-team
   Version: 2021.09.0
-*/
+
 pre code.hljs{
     display:block;
     overflow-x:auto;
@@ -54,3 +54,4 @@ code.hljs{
 }.hljs-meta .hljs-keyword,.hljs-meta-keyword{
     font-weight:700
 }
+*/
