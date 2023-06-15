@@ -39,3 +39,5 @@ f(x) = \int_{-\infty}^\infty
 \leq
 \left( \sum\_{k=1}^n a\_k^2 \right)
 \left( \sum\_{k=1}^n b\_k^2 \right)
+
+$\sqrt[3]{\frac{1}{2}+\sqrt{4^{3}+2|4}$
