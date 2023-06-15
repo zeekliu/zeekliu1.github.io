@@ -50,4 +50,6 @@ $A \mod B$
 
 $A \ B$
 
-$A | B$
+$A \mid B$
+
+$\sqrt{(\lvert x_a-x_b \rvert)^2+(\lvert y_a-y_b \rvert)^2}$
