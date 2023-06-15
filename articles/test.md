@@ -41,3 +41,13 @@ f(x) = \int_{-\infty}^\infty
 \left( \sum\_{k=1}^n b\_k^2 \right)
 
 $\sqrt[3]{\frac{1}{2}+\sqrt{4^{3}+2|4}$
+
+$\frac{1}{2}$
+
+$\sqrt{1+1}$
+
+$A \mod B$
+
+$A \ B$
+
+$A | B$
