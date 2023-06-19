@@ -10,6 +10,7 @@ pre code.hljs{
 	font-family:"Fira Code";
 	font-size:10pt;
 	indent:4;
+    background: #181818;
 }
 
 code.hljs{
