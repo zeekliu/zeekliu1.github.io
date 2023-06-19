@@ -3,9 +3,21 @@
 Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
 
 */
+pre code.hljs{
+    display:block;
+    overflow-x:auto;
+    padding:1em;
+	font-family:"Fira Code";
+	font-size:10pt;
+	indent:4;
+}
+
+code.hljs{
+    padding:3px 5px
+}
 
 .hljs {
-  background: #23241f;
+  background: #181818;
   color: #f8f8f2;
 }
 
