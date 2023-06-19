@@ -1,5 +1,5 @@
 body{
-    font-family: Consolas;
+    font-family: Fira Code;
 	background: black;
 	background-image: url("./bg.png");
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@ body{
 }
 #div_main h1,h2,h3{
     text-align: center;
-    font-family: Consolas;
+    font-family: Fira Code;
 }
 #div_main h1{font-size: 30pt;}
 #div_main h2{font-size: 15pt;}
