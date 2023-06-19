@@ -2,10 +2,10 @@ pre code.hljs{
     display:block;
     overflow-x:auto;
     padding:1em;
-	font-family:Consolas;
+	font-family:"Fira Code",Consolas,Menlo,monospace;
 	font-size:10pt;
 	indent:4;
-	ligature:false;
+	font-variant-ligatures:none;
 }
 code.hljs{
     padding:3px 5px
@@ -17,7 +17,7 @@ code.hljs{
 
 .hljs-tag,
 .hljs-subst {
-  color: #f8f8f2;
+  color: #181818;
   
 }
 
