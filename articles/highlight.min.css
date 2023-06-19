@@ -5,6 +5,7 @@ pre code.hljs{
 	font-family:Consolas;
 	font-size:10pt;
 	indent:4;
+	ligature:false;
 }
 code.hljs{
     padding:3px 5px
