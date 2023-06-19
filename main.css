@@ -1,7 +1,7 @@
 body{
-    font-family: Fira Code;
+    font-family: Consolas;
 	background: black;
-	background-image: url("./bg.png");
+	background-image: url("./bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -37,10 +37,10 @@ body{
 }
 #div_main h1,h2,h3{
     text-align: center;
-    font-family: Fira Code;
+    font-family: Consolas;
 }
 #div_main h1{font-size: 30pt;}
 #div_main h2{font-size: 15pt;}
 #div_main h3{font-size: 10pt;}
-a{color:#0969da;}
+a{color: #0969da;}
 a:hover{background: rgba(128,128,128,.5);}
